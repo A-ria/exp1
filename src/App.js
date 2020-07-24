@@ -1,32 +1,21 @@
 import React from 'react';
-import './App.css';
-import { Button } from 'antd';
+import ReactDOM from 'react-dom';
+import './main.css';
+import './util.css';
 
-const App = () => (
-  <div className="App">
-    <Button type="primary"></Button>
-  </div>
-);
+const App = () => {
+  return (
+    <div className="limiter wrap-login100">
+    </div>
+  );
+  };
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+ReactDOM.render(
+  <div className="container-login100-form-btn m-t-10">
+    <button className="login100-form-btn">
+      Log In
+    </button>
+  </div>,
+  document.getElementById('app'));
 
 export default App;
